@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socialshares</title>
+</head>
+<body>
+  <div id="socialshares"></div>
+  <script type="module">
+  import socialshares, { twitter, facebook } from '../socialshares.module.js';
+  socialshares(document.getElementById('socialshares'), {
+    buttons: [
+      twitter({ label: 'Share on Twitter' }),
+      facebook({ label: 'Share on Facebook' }),
+    ]
+  });
+  </script>
+</body>
+</html>
