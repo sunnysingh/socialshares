@@ -7,11 +7,16 @@
 <body>
   <div id="socialshares"></div>
   <script type="module">
-  import socialshares, { twitter, facebook } from '../socialshares.module.js';
+  import socialshares, {
+    twitter,
+    facebook,
+    linkedin,
+  } from '../socialshares.module.js';
   socialshares(document.getElementById('socialshares'), {
     buttons: [
       twitter({ label: 'Share on Twitter' }),
       facebook({ label: 'Share on Facebook' }),
+      linkedin({ label: 'Share on LinkedIn' }),
     ]
   });
   </script>
