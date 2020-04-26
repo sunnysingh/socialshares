@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://socialshar.es/">
-    <img src="./assets/readme-logo.svg" alt="Socialshares" width="400" />
+    <img src="./assets/readme-logo.png" alt="Socialshares" />
   </a>
 </p>
 
