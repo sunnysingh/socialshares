@@ -1,42 +1,15 @@
 {
   "name": "socialshares",
-  "version": "3.0.0-beta.0",
+  "version": "0.0.0",
   "description": "Social share buttons",
-  "source": "src/socialshares.js",
-  "main": "dist/socialshares.js",
-  "module": "dist/socialshares.module.js",
-  "unpkg": "dist/socialshares.umd.js",
   "scripts": {
-    "build": "microbundle",
-    "watch": "microbundle watch",
-    "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lerna": "lerna",
+    "list": "lerna list",
+    "build": "lerna run build",
+    "publish": "lerna publish"
   },
-  "homepage": "https://socialshar.es/",
-  "author": "Sunny Singh <me@sunnysingh.io>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunnysingh/socialshares.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sunnysingh/socialshares/issues"
-  },
-  "license": "MIT",
-  "keywords": [
-    "social",
-    "share",
-    "buttons",
-    "twitter",
-    "facebook",
-    "linkedin",
-    "javascript",
-    "react"
-  ],
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "microbundle": "0.12.0-next.8",
-    "prettier": "^2.0.4",
-    "serve": "^11.3.0"
+    "lerna": "^3.20.2"
   },
   "dependencies": {}
 }
