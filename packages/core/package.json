@@ -1,6 +1,6 @@
 {
   "name": "@socialshares/core",
-  "version": "0.0.5",
+  "version": "0.0.0",
   "description": "Social share buttons",
   "source": "src/socialshares.js",
   "main": "dist/socialshares.js",
@@ -40,5 +40,6 @@
     "microbundle": "0.12.0-next.8",
     "prettier": "^2.0.4",
     "serve": "^11.3.0"
-  }
+  },
+  "gitHead": "9ea47d70e168e85928ce45aebf27cea9edc880c9"
 }
