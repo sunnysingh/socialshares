@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img src="./assets/readme-logo.svg" alt="Socialshares" width="320" />
+  <img src="./assets/readme-logo.svg" alt="Socialshares" width="400" />
 
 </p>
 
