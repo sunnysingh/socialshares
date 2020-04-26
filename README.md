@@ -6,7 +6,13 @@
 
 <p align="center"><i>Socialshares v3. Work in progress.</i></p>
 
----
+<p align="center">
+
+[![npm](https://img.shields.io/npm/v/socialshares?style=for-the-badge)](https://npm.im/socialshares)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/socialshares?style=for-the-badge)
+[![Twitter Follow](https://img.shields.io/twitter/follow/sunnysinghio?color=blue&style=for-the-badge)](https://twitter.com/sunnysinghio)
+
+</p>
 
 ## Usage
 
