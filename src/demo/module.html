@@ -1,24 +1,25 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Socialshares</title>
-</head>
-<body>
-  <div id="socialshares"></div>
-  <script type="module">
-  import socialshares, {
-    twitter,
-    facebook,
-    linkedin,
-  } from '../socialshares.module.js';
-  socialshares(document.getElementById('socialshares'), {
-    buttons: [
-      twitter({ label: 'Share on Twitter' }),
-      facebook({ label: 'Share on Facebook' }),
-      linkedin({ label: 'Share on LinkedIn' }),
-    ]
-  });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialshares</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.5.1/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Socialshares</h1>
+      <h2>JavaScript Modules Demo</h2>
+      <hr />
+      <div id="socialshares"></div>
+    </main>
+    <script type="module">
+      import socialshares, * as buttons from '../socialshares.module.js';
+      socialshares(document.getElementById('socialshares'), {
+        // Render all available buttons
+        buttons: Object.entries(buttons)
+          .filter(([type]) => type !== 'default')
+          .map(([, button]) => button()),
+      });
+    </script>
+  </body>
 </html>

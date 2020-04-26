@@ -11,6 +11,7 @@ export const styles = {
     'button',
     `
       display: flex;
+      margin: 0;
       padding: 8px 12px;
       border-radius: 4px;
       font-size: 18px;
@@ -23,7 +24,9 @@ export const styles = {
     'icon',
     `
       display: inline-block;
+      margin: 0;
       margin-right: 8px;
+      padding: 0;
       width: 1em;
       height: 1em;
     `
@@ -32,7 +35,11 @@ export const styles = {
     'label',
     `
       display: inline-block;
+      margin: 0;
+      padding: 0;
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: normal;
+      white-space: nowrap;
     `
   ),
 };
@@ -56,6 +63,7 @@ const createCustomizedStyles = (id, { color }) => ({
           ...color,
           lightness: color.lightness + 0.3,
         })};
+        filter: none;
       }
     `
   ),
