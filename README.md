@@ -42,7 +42,7 @@ You can install via npm:
 npm install socialshares
 ```
 
-Then import with a bundler like Webpack or Rollup:
+Then import with a bundler like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/):
 
 ```js
 import socialshares, { twitterButton } from 'socialshares';
@@ -57,6 +57,10 @@ Make sure to add an empty element to your HTML:
 ```html
 <div id="socialshares"></div>
 ```
+
+Done! You should see a Tweet button rendered.
+
+Check out the [socialshares docs](https://socialshar.es/) for more.
 
 ## 💻 Development
 
