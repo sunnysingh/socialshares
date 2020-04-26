@@ -7,7 +7,7 @@
   "module": "dist/socialshares.module.js",
   "unpkg": "dist/socialshares.umd.js",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle --name=socialshares",
     "watch": "microbundle watch",
     "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
     "test": "echo \"Error: no test specified\" && exit 1",
