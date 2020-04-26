@@ -12,6 +12,9 @@
     "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://socialshar.es/",
   "author": "Sunny Singh <me@sunnysingh.io>",
   "repository": {
