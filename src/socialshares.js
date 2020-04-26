@@ -23,6 +23,14 @@ const styles = {
   ),
 };
 
+/**
+ * Mount socialshares to a DOM element
+ *
+ * @param {object} element DOM Node
+ * @param {object} options Options
+ *
+ * @returns {function} Unmount socialshares from DOM element
+ */
 export default function socialshares(element, options = {}) {
   const defaultConfig = {
     buttons: [],
@@ -46,7 +54,7 @@ export default function socialshares(element, options = {}) {
     </div>
   `;
 
-  element.addEventListener('click', (event) => {
+  const handleClick = (event) => {
     const url =
       event.target.dataset.socialsharesPopupUrl ||
       event.target.closest('[data-socialshares-popup-url]').dataset
@@ -55,12 +63,21 @@ export default function socialshares(element, options = {}) {
     if (!url) return;
 
     openPopup(url);
-  });
+  };
+
+  element.addEventListener('click', handleClick);
 
   injectStyles(stylesString);
+
+  const unmount = () => {
+    element.removeEventListener('click', handleClick);
+    element.innerHTML = '';
+  };
+
+  return unmount;
 }
 
-export function twitter(options = {}) {
+export function twitterButton(options = {}) {
   const defaultConfig = {
     label: 'Tweet',
     url: document.location.href,
@@ -88,7 +105,7 @@ export function twitter(options = {}) {
   });
 }
 
-export function facebook(options = {}) {
+export function facebookButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Facebook',
     url: document.location.href,
@@ -112,7 +129,7 @@ export function facebook(options = {}) {
   });
 }
 
-export function linkedin(options = {}) {
+export function linkedinButton(options = {}) {
   const defaultConfig = {
     label: 'Share on LinkedIn',
     url: document.location.href,
@@ -137,7 +154,7 @@ export function linkedin(options = {}) {
   });
 }
 
-export function vk(options = {}) {
+export function vkButton(options = {}) {
   const defaultConfig = {
     label: 'Share on VK',
     url: document.location.href,
@@ -165,7 +182,7 @@ export function vk(options = {}) {
   });
 }
 
-export function pinterest(options = {}) {
+export function pinterestButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Pinterest',
     url: document.location.href,
@@ -193,7 +210,7 @@ export function pinterest(options = {}) {
   });
 }
 
-export function reddit(options = {}) {
+export function redditButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Reddit',
     url: document.location.href,
@@ -219,7 +236,7 @@ export function reddit(options = {}) {
   });
 }
 
-export function tumblr(options = {}) {
+export function tumblrButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Tumblr',
     url: document.location.href,
@@ -251,7 +268,7 @@ export function tumblr(options = {}) {
   });
 }
 
-export function workplace(options = {}) {
+export function workplaceButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Workplace',
     url: document.location.href,
@@ -279,7 +296,7 @@ export function workplace(options = {}) {
   });
 }
 
-export function telegram(options = {}) {
+export function telegramButton(options = {}) {
   const defaultConfig = {
     label: 'Share on Telegram',
     url: document.location.href,
@@ -305,7 +322,7 @@ export function telegram(options = {}) {
   });
 }
 
-export function email(options = {}) {
+export function emailButton(options = {}) {
   const defaultConfig = {
     label: 'Share via Email',
     url: document.location.href,
@@ -332,7 +349,7 @@ export function email(options = {}) {
   });
 }
 
-export function whatsapp(options = {}) {
+export function whatsappButton(options = {}) {
   const defaultConfig = {
     label: 'Share on WhatsApp',
     url: document.location.href,
@@ -357,7 +374,7 @@ export function whatsapp(options = {}) {
   });
 }
 
-export function pocket(options = {}) {
+export function pocketButton(options = {}) {
   const defaultConfig = {
     label: 'Add to Pocket',
     url: document.location.href,
@@ -383,7 +400,7 @@ export function pocket(options = {}) {
   });
 }
 
-export function instapaper(options = {}) {
+export function instapaperButton(options = {}) {
   const defaultConfig = {
     label: 'Add to Instapaper',
     url: document.location.href,

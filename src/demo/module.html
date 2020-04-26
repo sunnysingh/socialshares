@@ -17,7 +17,7 @@
       socialshares(document.getElementById('socialshares'), {
         // Render all available buttons
         buttons: Object.entries(buttons)
-          .filter(([type]) => type !== 'default')
+          .filter(([name]) => name.endsWith('Button'))
           .map(([, button]) => button()),
       });
     </script>
