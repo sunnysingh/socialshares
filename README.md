@@ -1,7 +1,7 @@
 <p align="center">
-
-  <img src="./assets/readme-logo.svg" alt="Socialshares" width="400" />
-
+  <a href="https://socialshar.es/">
+    <img src="./assets/readme-logo.svg" alt="Socialshares" width="400" />
+  </a>
 </p>
 
 <p align="center">
