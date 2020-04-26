@@ -49,7 +49,8 @@
     </div>
 
     <script type="module" id="demoScript">
-      import socialshares, {
+      import {
+        renderShareButtons,
         twitterButton,
         facebookButton,
         linkedinButton,
@@ -57,9 +58,11 @@
 
       const mountElement = document.getElementById('socialshares');
 
-      socialshares(mountElement, {
-        buttons: [twitterButton(), facebookButton(), linkedinButton()],
-      });
+      renderShareButtons(mountElement, [
+        twitterButton(),
+        facebookButton(),
+        linkedinButton(),
+      ]);
     </script>
 
     <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

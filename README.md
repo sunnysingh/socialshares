@@ -23,14 +23,17 @@
 ## ⚡️ Quick start
 
 ```html
-<div id="socialshares"></div>
+<div id="shareButtons"></div>
 
 <script type="module">
-  import socialshares, { twitterButton } from '//unpkg.com/socialshares';
+  import {
+    renderShareButtons,
+    twitterButton,
+  } from '//unpkg.com/@socialshares/core?module';
 
-  const mountElement = document.getElementById('socialshares');
+  const mountElement = document.getElementById('shareButtons');
 
-  socialshares(mountElement, { buttons: [twitterButton()] });
+  renderShareButtons(mountElement, [twitterButton()]);
 </script>
 ```
 
@@ -39,23 +42,23 @@
 You can install via npm:
 
 ```sh
-npm install socialshares
+npm install @socialshares/core
 ```
 
 Then import with a bundler like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/):
 
 ```js
-import socialshares, { twitterButton } from 'socialshares';
+import { renderShareButtons, twitterButton } from '@socialshares/core';
 
-const mountElement = document.getElementById('socialshares');
+const mountElement = document.getElementById('shareButtons');
 
-socialshares(mountElement, { buttons: [twitterButton()] });
+renderShareButtons(mountElement, [twitterButton()]);
 ```
 
 Make sure to add an empty element to your HTML:
 
 ```html
-<div id="socialshares"></div>
+<div id="shareButtons"></div>
 ```
 
 Done! You should see a Tweet button rendered.

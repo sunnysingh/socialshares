@@ -24,26 +24,23 @@ const styles = {
 };
 
 /**
- * Mount socialshares to a DOM element
+ * Mount share buttons to a DOM element
  *
  * @param {object} element DOM Node
- * @param {object} options Options
+ * @param {array} buttons Buttons
  *
- * @returns {function} Unmount socialshares from DOM element
+ * @returns {function} Unmount share buttons from DOM element
  */
-export default function socialshares(element, options = {}) {
-  const defaultConfig = {
-    buttons: [],
-  };
-  const config = {
-    ...defaultConfig,
-    ...options,
-  };
-
+export function renderShareButtons(element, buttons = []) {
   let stylesString = renderStylesToString(styles);
   let buttonsHtml = '';
 
-  config.buttons.forEach(({ styles: buttonStyles, html }) => {
+  if (buttons.length === 0) {
+    console.warn('socialshares: zero buttons configured');
+    return () => {};
+  }
+
+  buttons.forEach(({ styles: buttonStyles, html }) => {
     stylesString += renderStylesToString(buttonStyles);
     buttonsHtml += `<div class="${styles.item}">${html}</div>`;
   });
