@@ -9,6 +9,9 @@
     "build": "lerna run build",
     "publish": "lerna publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "lerna": "^3.20.2"
   },
