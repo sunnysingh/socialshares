@@ -10,7 +10,8 @@
     "build": "microbundle",
     "watch": "microbundle watch",
     "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "publishConfig": {
     "access": "public"
