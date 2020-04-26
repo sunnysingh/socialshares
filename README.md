@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="https://npm.im/socialshares">
-    <img src="https://img.shields.io/npm/v/socialshares?style=for-the-badge" alt="npm" />
+    <img src="https://img.shields.io/npm/v/socialshares?style=for-the-badge&color=%236862BA" alt="npm" />
   </a>
   <a href="https://bundlephobia.com/result?p=socialshares">
-    <img src="https://img.shields.io/bundlephobia/minzip/socialshares?style=for-the-badge" alt="npm bundle size" />
+    <img src="https://img.shields.io/bundlephobia/minzip/socialshares?style=for-the-badge&color=%236862BA" alt="npm bundle size" />
   </a>
   <a href="https://twitter.com/sunnysinghio">
-    <img src="https://img.shields.io/twitter/follow/sunnysinghio?color=blue&style=for-the-badge" alt="twitter follow" />
+    <img src="https://img.shields.io/twitter/follow/sunnysinghio?style=for-the-badge&color=%236862BA" alt="twitter follow" />
   </a>
 </p>
 
