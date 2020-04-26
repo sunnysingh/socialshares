@@ -1,7 +1,5 @@
 {
-  "name": "socialshares",
-  "version": "0.0.0",
-  "description": "Social share buttons",
+  "private": true,
   "scripts": {
     "lerna": "lerna",
     "list": "lerna list",
@@ -9,11 +7,7 @@
     "build": "lerna run build",
     "publish": "lerna publish"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "lerna": "^3.20.2"
-  },
-  "dependencies": {}
+  }
 }
