@@ -5,7 +5,7 @@
   "scripts": {
     "lerna": "lerna",
     "list": "lerna list",
-    "version": "lerna version",
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "publish": "lerna publish"
   },

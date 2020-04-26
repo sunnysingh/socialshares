@@ -64,15 +64,17 @@ Check out the [socialshares docs](https://socialshar.es/) for more.
 
 ## 💻 Development
 
-1. Install dependencies: `npm install`
+1. Install dependencies: `npm run bootstrap`
+1. Open core package: `cd packages/core`
 1. Launch watcher and demo: `npm run dev`
 
 ## 🚀 Distributing
 
-1. `npm run build`
-1. TODO...
+1. Install dependencies: `npm run bootstrap`
+1. Publish packages: `npm run publish`
 
 ## 👥 Credits
 
+- Monorepo managed with [Lerna](https://lerna.js.org/)
 - Package bundled with [Microbundle](https://github.com/developit/microbundle)
 - Icons from [Simple Icons](https://simpleicons.org/)
