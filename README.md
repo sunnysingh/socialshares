@@ -6,6 +6,8 @@
 
 <p align="center"><i>Socialshares v3. Work in progress.</i></p>
 
+---
+
 ## Usage
 
 ```html
