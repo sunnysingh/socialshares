@@ -4,7 +4,9 @@
 
 </p>
 
-<p align="center"><i>Socialshares v3. Work in progress.</i></p>
+<p align="center">
+  <strong>Socialshares v3. Work in progress.</strong>
+</p>
 
 <p align="center">
   <a href="https://npm.im/socialshares"><img src="https://img.shields.io/npm/v/socialshares?style=for-the-badge" alt="npm" /></a>
