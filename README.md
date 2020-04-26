@@ -70,8 +70,15 @@ Check out the [socialshares docs](https://socialshar.es/) for more.
 
 ## 🚀 Distributing
 
+1. Log in to npm: `npm login`
 1. Install dependencies: `npm run bootstrap`
 1. Publish packages: `npm run publish`
+
+If a package was unchanged but you need to force publish a version anyway, try:
+
+```sh
+npm run publish -- --force-publish
+```
 
 ## 👥 Credits
 
