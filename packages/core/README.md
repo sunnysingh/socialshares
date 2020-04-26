@@ -62,16 +62,6 @@ Done! You should see a Tweet button rendered.
 
 Check out the [socialshares docs](https://socialshar.es/) for more.
 
-## 💻 Development
-
-1. Install dependencies: `npm install`
-1. Launch watcher and demo: `npm run dev`
-
-## 🚀 Distributing
-
-1. `npm run build`
-1. TODO...
-
 ## 👥 Credits
 
 - Package bundled with [Microbundle](https://github.com/developit/microbundle)
