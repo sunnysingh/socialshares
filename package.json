@@ -8,9 +8,8 @@
   "unpkg": "dist/socialshares.umd.js",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch",
-    "copy-demo": "rm -rf ./dist/demo/ && cp -R ./src/demo/ ./dist/demo/",
-    "demo": "npm run copy-demo && http-server ./dist/ --gzip -o /demo/module.html",
+    "watch": "microbundle watch",
+    "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://socialshar.es/",
@@ -34,9 +33,10 @@
     "react"
   ],
   "devDependencies": {
-    "http-server": "^0.12.1",
+    "concurrently": "^5.2.0",
     "microbundle": "0.12.0-next.8",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.4",
+    "serve": "^11.3.0"
   },
   "dependencies": {}
 }

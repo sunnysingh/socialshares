@@ -64,9 +64,8 @@ Check out the [socialshares docs](https://socialshar.es/) for more.
 
 ## 💻 Development
 
-1. `npm install`
-1. `npm run dev`
-1. `npm run demo`
+1. Install dependencies: `npm install`
+1. Launch watcher and demo: `npm run dev`
 
 ## 🚀 Distributing
 
