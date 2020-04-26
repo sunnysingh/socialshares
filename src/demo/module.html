@@ -2,24 +2,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Socialshares</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.5.1/mvp.css" />
+    <style>
+      :root {
+        --color-text: #212121;
+      }
+    </style>
   </head>
+
   <body>
     <main>
-      <h1>Socialshares</h1>
-      <h2>JavaScript Modules Demo</h2>
-      <hr />
-      <div id="socialshares"></div>
+      <header>
+        <img src="./logo.svg" alt="Socialshares logo" width="320" />
+
+        <hr />
+
+        <h1>JavaScript Modules Demo</h1>
+
+        <p>
+          Usage of socialshares with
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules"
+            >JavaScript modules</a
+          >
+        </p>
+      </header>
     </main>
-    <script type="module">
-      import socialshares, * as buttons from '../socialshares.module.js';
-      socialshares(document.getElementById('socialshares'), {
-        // Render all available buttons
-        buttons: Object.entries(buttons)
-          .filter(([name]) => name.endsWith('Button'))
-          .map(([, button]) => button()),
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div id="socialshares" style="margin-bottom: 32px;"></div>
+      <pre><code id="demoCodeBlock" class="language-js"></code></pre>
+    </div>
+
+    <script type="module" id="demoScript">
+      import socialshares, {
+        twitterButton,
+        facebookButton,
+        linkedinButton,
+      } from '../socialshares.module.js';
+
+      const mountElement = document.getElementById('socialshares');
+
+      socialshares(mountElement, {
+        buttons: [twitterButton(), facebookButton(), linkedinButton()],
       });
+    </script>
+
+    <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script>
+      const demoSourceCode = document.getElementById('demoScript').textContent;
+      document.getElementById('demoCodeBlock').innerHTML = demoSourceCode
+        .trim() // remove beginning and ending newlines
+        .replace(/      /g, '') // remove leading indentation
+        .replace(/ /g, '&nbsp;'); // ensure rendered whitespace
     </script>
   </body>
 </html>

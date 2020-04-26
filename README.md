@@ -1,6 +1,10 @@
-# socialshares
+<center>
 
-Socialshares v3. Work in progress.
+  <img src="./assets/logo.svg" alt="Socialshares" width="320" />
+
+  <p><i>Socialshares v3. Work in progress.</i></p>
+
+</center>
 
 ## Usage
 
