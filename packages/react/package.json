@@ -1,0 +1,53 @@
+{
+  "name": "react",
+  "version": "0.0.13",
+  "description": "Social share buttons",
+  "source": "src/socialshares.js",
+  "main": "dist/socialshares.js",
+  "module": "dist/socialshares.module.js",
+  "unpkg": "dist/socialshares.umd.js",
+  "scripts": {
+    "build": "microbundle --name=socialshares",
+    "watch": "microbundle watch",
+    "dev": "parcel src/demo/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://socialshar.es/",
+  "author": "Sunny Singh <me@sunnysingh.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnysingh/socialshares.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunnysingh/socialshares/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "social",
+    "share",
+    "buttons",
+    "twitter",
+    "facebook",
+    "linkedin",
+    "javascript",
+    "react"
+  ],
+  "dependencies": {
+    "@socialshares/core": "^0.0.13"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -67,7 +67,8 @@ Check out the [socialshares docs](https://socialshar.es/) for more.
 
 ## 💻 Development
 
-1. Install dependencies: `npm run bootstrap`
+1. Install dependencies: `npm install`
+1. Bootstrap packages: `npm run bootstrap`
 1. Open core package: `cd packages/core`
 1. Launch watcher and demo: `npm run dev`
 

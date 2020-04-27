@@ -44,7 +44,7 @@
     </main>
 
     <div style="display: flex; flex-direction: column; align-items: center;">
-      <div id="socialshares" style="margin-bottom: 32px;"></div>
+      <div id="shareButtons" style="margin-bottom: 32px;"></div>
       <pre><code id="demoCodeBlock" class="language-js"></code></pre>
     </div>
 
@@ -56,7 +56,7 @@
         linkedinButton,
       } from '/dist/socialshares.module.js';
 
-      const mountElement = document.getElementById('socialshares');
+      const mountElement = document.getElementById('shareButtons');
 
       renderShareButtons(mountElement, [
         twitterButton(),

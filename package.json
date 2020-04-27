@@ -3,7 +3,8 @@
   "scripts": {
     "lerna": "lerna",
     "list": "lerna list",
-    "bootstrap": "lerna bootstrap",
+    "link": "lerna link",
+    "bootstrap": "lerna clean && lerna bootstrap --no-ci --force-local",
     "build": "lerna run build",
     "publish": "lerna publish"
   },
