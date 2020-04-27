@@ -88,4 +88,4 @@ npm run publish -- --force-publish
 - Monorepo managed with [Lerna](https://lerna.js.org/)
 - Package bundled with [Microbundle](https://github.com/developit/microbundle)
 - Icons from [Simple Icons](https://simpleicons.org/)
-- Demos styled with [MVP.css](https://andybrewer.github.io/mvp/)
+- Demos styled with [MVP.css](https://andybrewer.github.io/mvp/) and [Prism](https://prismjs.com/)
