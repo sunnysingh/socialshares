@@ -1,6 +1,6 @@
 {
   "name": "@socialshares/react",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Social share buttons",
   "source": "src/socialshares.js",
   "main": "dist/socialshares.js",
@@ -37,7 +37,7 @@
     "react"
   ],
   "dependencies": {
-    "@socialshares/core": "^0.0.17"
+    "@socialshares/core": "^0.0.18"
   },
   "devDependencies": {
     "microbundle": "next",
