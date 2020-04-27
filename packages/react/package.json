@@ -7,8 +7,8 @@
   "module": "dist/socialshares.module.js",
   "unpkg": "dist/socialshares.umd.js",
   "scripts": {
-    "build": "microbundle --name=socialshares",
-    "watch": "microbundle watch",
+    "build": "microbundle --name=socialshares --jsx React.createElement",
+    "watch": "microbundle watch --jsx React.createElement",
     "dev": "parcel src/demo/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
