@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://npm.im/socialshares">
-    <img src="https://img.shields.io/npm/v/socialshares?style=for-the-badge&color=%236862BA" alt="npm" />
+  <a href="https://npm.im/@socialshares/core">
+    <img src="https://img.shields.io/npm/v/@socialshares/core?style=for-the-badge&color=%236862BA" alt="npm" />
   </a>
-  <a href="https://bundlephobia.com/result?p=socialshares">
-    <img src="https://img.shields.io/bundlephobia/minzip/socialshares?style=for-the-badge&color=%236862BA" alt="npm bundle size" />
+  <a href="https://bundlephobia.com/result?p=@socialshares/core">
+    <img src="https://img.shields.io/bundlephobia/minzip/@socialshares/core?style=for-the-badge&color=%236862BA" alt="npm bundle size" />
   </a>
   <a href="https://twitter.com/sunnysinghio">
     <img src="https://img.shields.io/twitter/follow/sunnysinghio?style=for-the-badge&color=%236862BA" alt="twitter follow" />
@@ -29,11 +29,12 @@
   import {
     renderShareButtons,
     twitterButton,
+    facebookButton,
   } from '//unpkg.com/@socialshares/core?module';
 
   const mountElement = document.getElementById('shareButtons');
 
-  renderShareButtons(mountElement, [twitterButton()]);
+  renderShareButtons(mountElement, [twitterButton(), facebookButton()]);
 </script>
 ```
 
@@ -61,6 +62,6 @@ Make sure to add an empty element to your HTML:
 <div id="shareButtons"></div>
 ```
 
-Done! You should see a Tweet button rendered.
+Done! You should see a Tweet button and Facebook button rendered.
 
 Check out the [socialshares docs](https://socialshar.es/) for more.
