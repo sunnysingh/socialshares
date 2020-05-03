@@ -29,7 +29,7 @@ import {
   ShareButtons,
   TwitterButton,
   FacebookButton,
-} from '../../socialshares';
+} from '@socialshares/react';
 
 const mountElement = document.getElementById('shareButtons');
 
@@ -44,7 +44,7 @@ ReactDOM.render(
 
 ## 📦 Install
 
-You can install via npm:
+You can install via [npm](https://www.npmjs.com/):
 
 ```sh
 npm install @socialshares/react

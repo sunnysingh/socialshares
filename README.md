@@ -40,7 +40,7 @@
 
 ## 📦 Install
 
-You can install via npm:
+You can install via [npm](https://www.npmjs.com/):
 
 ```sh
 npm install @socialshares/core
@@ -65,6 +65,10 @@ Make sure to add an empty element to your HTML:
 Done! You should see a Tweet button and Facebook button rendered.
 
 Check out the [socialshares docs](https://socialshar.es/) for more.
+
+## 🔌 Integrations
+
+Socialshares works well with React and provides the [@socialshares/react](https://npm.im/@socialshares/react) package for a seamless component integration.
 
 ## 💻 Development
 
