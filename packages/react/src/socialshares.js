@@ -14,6 +14,16 @@ export function ShareButtons({ children }) {
   return <div ref={mountElement} />;
 }
 
-export { TwitterButton } from './twitter';
+export { EmailButton } from './email';
 export { FacebookButton } from './facebook';
+export { InstapaperButton } from './instapaper';
 export { LinkedinButton } from './linkedin';
+export { PinterestButton } from './pinterest';
+export { PocketButton } from './pocket';
+export { RedditButton } from './reddit';
+export { TelegramButton } from './telegram';
+export { TumblrButton } from './tumblr';
+export { TwitterButton } from './twitter';
+export { VkButton } from './vk';
+export { WhatsappButton } from './whatsapp';
+export { WorkplaceButton } from './workplace';
