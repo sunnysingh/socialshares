@@ -70,6 +70,8 @@ Check out the [socialshares docs](https://socialshar.es/) for more.
 
 Socialshares works well with React and provides the [@socialshares/react](https://npm.im/@socialshares/react) package for a seamless component integration.
 
+---
+
 ## 💻 Development
 
 1. Install dependencies: `npm install`
