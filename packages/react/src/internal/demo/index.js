@@ -4,14 +4,16 @@ import {
   ShareButtons,
   TwitterButton,
   FacebookButton,
+  LinkedinButton,
 } from '../../socialshares';
 
 const mountElement = document.getElementById('shareButtons');
 
 ReactDOM.render(
   <ShareButtons>
-    <TwitterButton>Share on Twitter</TwitterButton>
-    <FacebookButton>Share on Facebook</FacebookButton>
+    <TwitterButton />
+    <FacebookButton />
+    <LinkedinButton />
   </ShareButtons>,
   mountElement
 );
