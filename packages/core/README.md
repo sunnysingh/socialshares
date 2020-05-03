@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="https://npm.im/@socialshares/core">
-    <img src="https://img.shields.io/npm/v/@socialshares/core?style=for-the-badge&color=%236862BA" alt="npm" />
+    <img src="https://img.shields.io/npm/v/@socialshares/core?style=for-the-badge&color=%236862BA" alt="View npm package" />
   </a>
-  <a href="https://bundlephobia.com/result?p=@socialshares/core">
-    <img src="https://img.shields.io/bundlephobia/minzip/@socialshares/core?style=for-the-badge&color=%236862BA" alt="npm bundle size" />
+  <a href="https://github.com/sunnysingh/socialshares/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/npm/l/@socialshares/core?color=6862BA&style=for-the-badge" alt="MIT License" />
   </a>
   <a href="https://twitter.com/sunnysinghio">
-    <img src="https://img.shields.io/twitter/follow/sunnysinghio?style=for-the-badge&color=%236862BA" alt="twitter follow" />
+    <img src="https://img.shields.io/twitter/follow/sunnysinghio?style=for-the-badge&color=%236862BA" alt="Follow on Twitter" />
   </a>
 </p>
 
@@ -49,11 +49,15 @@ npm install @socialshares/core
 Then import with a bundler like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/):
 
 ```js
-import { renderShareButtons, twitterButton } from '@socialshares/core';
+import {
+  renderShareButtons,
+  twitterButton,
+  facebookButton,
+} from '@socialshares/core';
 
 const mountElement = document.getElementById('shareButtons');
 
-renderShareButtons(mountElement, [twitterButton()]);
+renderShareButtons(mountElement, [twitterButton(), facebookButton()]);
 ```
 
 Make sure to add an empty element to your HTML:
