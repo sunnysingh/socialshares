@@ -1,4 +1,4 @@
-const CSS_CLASS_PREFIX = '__socialshare';
+const CSS_CLASS_PREFIX = '__socialshares';
 
 export function createStyle(name, baseCss, ...otherCss) {
   const classname = `${CSS_CLASS_PREFIX}_${name}`;
@@ -20,8 +20,12 @@ export function renderStylesToString(styles) {
 
 export function injectStyles(stylesString) {
   const styleElement = document.createElement('style');
+
   styleElement.appendChild(document.createTextNode(stylesString));
+
   document.head.appendChild(styleElement);
+
+  return styleElement;
 }
 
 export function hsl({ hue, saturation, lightness }) {

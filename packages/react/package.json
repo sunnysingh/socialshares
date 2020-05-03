@@ -6,10 +6,11 @@
   "main": "dist/socialshares.js",
   "module": "dist/socialshares.module.js",
   "unpkg": "dist/socialshares.umd.js",
+  "sideEffects": false,
   "scripts": {
-    "build": "microbundle --name=socialshares --jsx React.createElement",
-    "watch": "microbundle watch --jsx React.createElement",
-    "dev": "parcel src/demo/index.html",
+    "build": "microbundle src/*.js --name=socialshares --jsx React.createElement",
+    "watch": "microbundle watch src/*.js --jsx React.createElement",
+    "dev": "parcel src/internal/demo/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },

@@ -6,10 +6,11 @@
   "main": "dist/socialshares.js",
   "module": "dist/socialshares.module.js",
   "unpkg": "dist/socialshares.umd.js",
+  "sideEffects": false,
   "scripts": {
-    "build": "microbundle --name=socialshares",
-    "watch": "microbundle watch",
-    "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/demo/module'",
+    "build": "microbundle --name=socialshares 'src/*.js'",
+    "watch": "microbundle watch 'src/*.js'",
+    "dev": "concurrently 'npm run watch' 'serve ./' 'open http://localhost:5000/src/internal/demo/module'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },

@@ -6,6 +6,8 @@ const DEFAULT_COLOR = {
   lightness: 0.38,
 };
 
+export const POPUP_URL_ATTRIBUTE = 'data-socialshares-popup-url';
+
 export const styles = {
   button: createStyle(
     'button',
@@ -69,17 +71,24 @@ const createCustomizedStyles = (id, { color }) => ({
   ),
 });
 
+export const isValidButtonObject = (object) =>
+  typeof object === 'object' &&
+  typeof object.id === 'string' &&
+  typeof object.styles === 'object' &&
+  typeof object.html === 'string';
+
 export default function button({ id, icon, label, color, popupUrl }) {
   const customizedStyles = createCustomizedStyles(id, {
     color: color || DEFAULT_COLOR,
   });
 
   return {
+    id,
     styles: customizedStyles,
     html: `
       <button
         class="${styles.button} ${customizedStyles.button}"
-        data-socialshares-popup-url="${popupUrl}"
+        ${POPUP_URL_ATTRIBUTE}="${popupUrl}"
       >
         <span class="${styles.icon}">${icon}</span>
         <span class="${styles.label}">${label}</span>
